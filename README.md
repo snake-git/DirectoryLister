@@ -68,5 +68,5 @@ sed -i 's/,scandir//g' /usr/local/php/etc/php.ini
 如果想要插入流量统计代码，那只需要把代码写到 default_header.php 文件内即可。
 
 ——————
-
+我的博客 逗比根据地(需挂代理)：https://doub.io/
 本程序基于 Directory Lister原版魔改：http://www.directorylister.com/
