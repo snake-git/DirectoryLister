@@ -68,7 +68,7 @@ $md_text = file_get_contents($md_file);
         </div>
 		<div class="container">
         <div class="announcement">
-		<i class="fa fa-volume-down" style="display: inline-block;font-size: 15px;margin: 0;line-height: 1;color: #444;"></i><p style="display: inline-block;font-size: 15px;margin: 0;line-height: 1;text-indent: 5px;" >任何加密压缩文件，密码均为<code>271866172</code>，<a target="_blank" href="https://softs.pw/?dir=科学上网/Android">安卓APP</a>/<a target="_blank" href="https://softs.pw/?dir=科学上网/PC">PC软件</a> 已支持<strong>自动更新最新版本</strong></p>
+		<i class="fa fa-volume-down" style="display: inline-block;font-size: 15px;margin: 0;line-height: 1;color: #444;"></i><p style="display: inline-block;font-size: 15px;margin: 0;line-height: 1;text-indent: 5px;" >顶部公告栏</p>
 		</div>
 		</div>
 		<div id="page-content" class="container">
