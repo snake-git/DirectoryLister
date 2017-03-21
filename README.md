@@ -1,2 +1,54 @@
-# DirectoryLister
-一个逗比魔改的Directory Lister~
+# 一个逗比魔改的Directory Lister~
+
+### 魔改特点：
+
+我之所以使用Directory Lister，就是因为这个程序非常的简洁，符合我心中对 目录列表程序的定义，在使用期间，根据我个人喜好和审美做了一些改变。
+- 界面式样魔改
+- 支持中文目录和文件名
+- 支持显示各文件夹内的简介说明
+- 默认调用的各种 CDN文件本地化
+- 等等等等...
+
+### 演示示例：
+
+逗比云 https://softs.pw
+
+### 下载安装：
+
+下载压缩文件后，解压并上传到已经搭建好 PHP和HTTP环境的服务器中（https://lnmp.org/），然后即可上传文件和创建文件夹了！
+Github打包：https://github.com/ToyoDAdoubi/DirectoryLister/archive/master.zip
+逗比云打包：https://softs.pw/Website/Directory%20Lister%E9%AD%94%E6%94%B9%E7%89%88%28by-Toyo%29%20v2.6.1.zip
+
+#### 文件结构
+假设你的虚拟主机是 `/home/wwwroot/xxx.xx`
+``` bash
+/home/wwwroot/xxx.xx
+├─ resources
+│   ├ themes
+│   │ └ bootstrap
+│   │    └ .....
+│   │
+│   ├ DirectoryLister.php
+│   ├ config.php
+│   └ fileTypes.php
+│
+├ README.html # 文件夹内的 说明简介文件 #
+├ index.php
+│
+├─ 测试文件夹
+│   ├ 测试文件.txt
+│   └ README.html # 文件夹内的 说明简介文件 #
+│
+└ 测试文件.txt
+```
+### 注意事项：
+
+#### 不显示文件和目录
+
+如果安装 lnmp一键包上传Directory Lister后，Directory Lister不显示文件和目录，那么可能是 PHP函数` scandir `被禁用了，取消禁用即可。
+``` bash
+sed -i 's/,scandir//g' /usr/local/php/etc/php.ini
+# 取消scandir函数禁用
+/etc/init.d/php-fpm restart
+# 重启 PHP生效
+```
