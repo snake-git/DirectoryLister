@@ -7,7 +7,7 @@
 - 支持中文目录和文件名
 - 支持显示各文件夹内的简介说明
 - 默认调用的各种 CDN文件本地化
-- 等等等等...
+- 等等 ...
 
 ### 演示示例：
 
@@ -15,8 +15,10 @@
 
 ### 下载安装：
 
-下载压缩文件后，解压并上传到已经搭建好 PHP和HTTP环境的服务器中（https://lnmp.org/），然后即可上传文件和创建文件夹了！
+下载压缩文件后，解压并上传到已经搭建好 PHP和HTTP环境的服务器中（lnmp.org），然后即可上传文件和创建文件夹了！
+
 Github打包：https://github.com/ToyoDAdoubi/DirectoryLister/archive/master.zip
+
 逗比云打包：https://softs.pw/Website/Directory%20Lister%E9%AD%94%E6%94%B9%E7%89%88%28by-Toyo%29%20v2.6.1.zip
 
 #### 文件结构
@@ -52,3 +54,10 @@ sed -i 's/,scandir//g' /usr/local/php/etc/php.ini
 /etc/init.d/php-fpm restart
 # 重启 PHP生效
 ```
+——————
+
+如果想要插入流量统计代码，那只需要把代码写到 default_header.php 文件内即可。
+
+——————
+
+本程序基于 Directory Lister原版魔改：http://www.directorylister.com/
